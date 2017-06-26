@@ -76,4 +76,8 @@ Use the `printf()` function.
 * 6. *git checkout -b **分支名** * 创建并切换分支,相当于git branch *分支名*, git checkout *分支名*,**git branch -d *分支名***,删除分支
 * 7. 在分支上修改文件之后,add和commit操作之后,在master分支上是看不到修改的内容的,可以合并分支,在主分支上**git merge *文件名***
 
+>> ## 四、 删除文件
+* 1. rm -rf 删除一个文件或者文件夹,只是在工作区的修改,git status 可以知道哪些文件被删除了
+* 2. > 若确实要在版本库中删除文件,则用git rm 删除掉,并且git commit
 
+       > 若只是删错了,则git checkout "一键还原"到与版本库中一致的文件
