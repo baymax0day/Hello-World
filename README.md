@@ -56,7 +56,7 @@ Use the `printf()` function.
 * 2. *git add filename* 添加一个文件 到暂存区
 * 3. *git commit -m "备注说明"* 提交一个文件到仓库
 * 4. *git status* 查看当前文件的提交,修改等状态
-* 5. *git diff filename * 查看文件修改的内容
+* 5. *git diff filename* 查看文件修改的内容
 >>   ## 二、 版本修改,回退
 * 1. *git log* 查看改动的历史记录,commit 指的就是每次提交的版本号,简略列出用 git log –pretty=oneline 
 * 2. #### 回退操作
