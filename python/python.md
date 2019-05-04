@@ -5,8 +5,19 @@
 
 > json操作
 
+>> json操作
+
     1.json.dumps 将Python对象转换为json对象,type是一个字符串str
     2.json.loads 将一个json对象转换成一个Python对象,type是一个list或是dict
+
+>> json异常:Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+
+    大概提示是要用双引号，网上搜索了一个也好像是说由于json的key没有双引号，导致json解析错误的。
+    利用replace将单引号改成双引号，就可以了。
+
+>> json美化
+    json.dumps(obj, indent=4)
+    设置 indent = 4, 就可以美化输出的json对象obj了
 
 > 异常处理
 
@@ -70,6 +81,12 @@ def reunicode(a):
 print reunicode(a)                                                                    
 ```
 
+> 将byte转化为str类型[类型转换]
+
+```
+    a = b'admin123'
+    print(a.decode(()) # decode是将byte类型的数据转换为str
+```
 
 
 
